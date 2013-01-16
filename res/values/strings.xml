@@ -4,6 +4,7 @@
     <string name="app_name">Fetch</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="string_uri">10.0.2.2</string>
     <string name="menu_settings">Settings</string>
 
 </resources>
