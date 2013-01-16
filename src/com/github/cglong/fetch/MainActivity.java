@@ -13,6 +13,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * This activity sends a user-provided message to a server and displays the response to the user.
+ * 
+ * @author Chris Long
+ */
 public class MainActivity extends Activity {
 	
 	@Override
@@ -28,6 +33,12 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	/**
+	 * Asynchronously sends the string in the {@link android.widget.EditText EditText} to the server
+	 * and sets the contents of the {@link android.widget.TextView TextView} to its response.
+	 * 
+	 * @param view The {@link android.widget.EditText EditText} containing the string to send
+	 */
 	public void sendMessage(View view) {
 		EditText editMessage = (EditText) findViewById(R.id.edit_message);
 		CharSequence message = editMessage.getText();
